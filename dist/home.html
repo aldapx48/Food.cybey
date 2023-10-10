@@ -1,0 +1,26 @@
+    <section class="splash-screen">
+        <div class="logo">
+            <!-- <img src="images/logo.png" /> -->
+        </div>
+
+        <div class="splash-content">
+            <h1>Takeaway Order Made on Demand</h1>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <!-- The main content of your website goes here -->
+        adad
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const splashScreen = document.querySelector('.splash-screen');
+            setTimeout(() => {
+                splashScreen.style.opacity = 0;
+                setTimeout(() => {
+                    splashScreen.style.display = 'none';
+                }, 1000); // Adjust the time (in milliseconds) for how long the splash screen will be visible.
+            }, 2000); // Adjust the time (in milliseconds) for how long the splash screen will stay before fading out.
+        });
+    </script>

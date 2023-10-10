@@ -1,0 +1,4 @@
+<?php
+	$Salt_Add_Key = openssl_random_pseudo_bytes(55, $cstrong); // Private Key
+	$Salt_Hash_Key = "dcd1260198fc4136c116cb015116e2a84ad7dc4a95687040eb68a1c9afd6ace3da5d018bb332ea0860863dfc404cb9d4fa53150a127c6cb5ba7c70020225f8db8973988eb4646f079bbc2995281aa266a81afae2b857d2bc870c2c976b83ae724442bc98c73537a96ac7d718342b1227af8b53d1b16a25a7008bfc7d4c0ea1d5"; // Public key(array)
+?>

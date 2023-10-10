@@ -1,0 +1,44 @@
+$primary-color: #395185;
+$dark-color: #000000;
+$light-color: #ffffff;
+$danger-color: #dc3545;
+$success-color: #28a745;
+$max-width: 1170px;
+// Set Text Color Based on the Background
+@function set-text-color($color) {
+    @if(lightness($color) > 60) {
+        @return #333333;
+    }
+    @else {
+        @return #ffffff;
+    }
+}
+
+// Set Background and Text Color
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
+
+// Margin and Padding
+$spaceamounts: (1, 2, 3, 4, 5);
+@each $space in $spaceamounts {
+    // All Around Margins
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    // Vertical Margin
+    .my-#{$space} {
+        margin-top: #{$space}rem;
+        margin-bottom: #{$space}rem;
+    }
+    // All Around Padding
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    // Vertical Padding
+    .py-#{$space} {
+        padding-top: #{$space}rem;
+        padding-bottom: #{$space}rem;
+    }
+}

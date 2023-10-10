@@ -1,0 +1,37 @@
+form {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+    &-text {
+        display: block;
+        margin-top: 0.3rem;
+        color: #aaaaaa;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+        display: block;
+        width: 287px;
+        height: 51px;
+        padding: 0.4rem;
+        font-size: 20px;
+        border: 1px solid $dark-color;
+        border-radius: 5px;
+        padding: 10px 15px;
+    }
+    button[type="submit"] {
+        width: 100%;
+        font: inherit;
+    }
+    .social-input {
+        display: flex;
+        i {
+            padding: 0.5rem;
+            width: 4rem;
+            //&.fa-twitter {
+            // Twitter color and so on for others
+            //}
+        }
+    }
+}
